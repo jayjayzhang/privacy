@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J Shell 隐私政策 / Privacy Policy</title>
+<meta name="description" content="J Shell（Android SSH 客户端）隐私政策：本地优先，不收集、不上传任何数据。Privacy policy for the J Shell Android SSH client.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --fg: #1b1b1f;
+    --muted: #5a5f6a;
+    --bg: #ffffff;
+    --card: #f5f6f8;
+    --line: #dfe2e8;
+    --accent: #2f6f4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #e6e6ea;
+      --muted: #a4a8b3;
+      --bg: #14161a;
+      --card: #1d2026;
+      --line: #2c313a;
+      --accent: #7ec9a2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", sans-serif;
+    padding: 0 16px 64px;
+  }
+  main { max-width: 780px; margin: 0 auto; }
+  header { padding: 28px 0 8px; }
+  h1 { font-size: 1.6rem; line-height: 1.35; margin: 0 0 12px; }
+  h2 { font-size: 1.2rem; margin: 34px 0 10px; padding-top: 10px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.02rem; margin: 22px 0 8px; }
+  p, li { margin: 10px 0; }
+  ul { padding-left: 1.25em; }
+  a { color: var(--accent); word-break: break-word; }
+  code {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: .9em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .meta { color: var(--muted); font-size: .93rem; }
+  .meta div { margin: 2px 0; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 18px 0 6px;
+  }
+  .lead p { margin: 8px 0; }
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .95rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--card); font-weight: 600; }
+  .switch {
+    position: sticky; top: 0; z-index: 2;
+    display: flex; gap: 8px; align-items: center;
+    background: var(--bg); padding: 12px 0; border-bottom: 1px solid var(--line);
+  }
+  .switch button {
+    font: inherit; font-size: .9rem; cursor: pointer;
+    color: var(--fg); background: var(--card);
+    border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px;
+  }
+  .switch button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  .switch .hint { color: var(--muted); font-size: .85rem; }
+  footer { color: var(--muted); font-size: .9rem; margin-top: 40px; border-top: 1px solid var(--line); padding-top: 14px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <div class="switch">
+    <button id="btn-zh" type="button" aria-pressed="true">中文</button>
+    <button id="btn-en" type="button" aria-pressed="true">English</button>
+    <span class="hint">可切换语言 / toggle language</span>
+  </div>
+
+  <header>
+    <h1>J Shell 隐私政策<br><span lang="en">J Shell Privacy Policy</span></h1>
+    <div class="meta">
+      <div><strong>生效日期 / Effective:</strong> 2026-09-30</div>
+      <div><strong>最近更新 / Updated:</strong> 2026-09-30</div>
+      <div><strong>适用应用 / App:</strong> J Shell（Android，<code>com.jay.harborshell</code>）</div>
+      <div><strong>开发者 / Developer:</strong> J Shell 开发者（个人开发者） / The J Shell developer (individual)</div>
+      <div><strong>联系邮箱 / Contact:</strong> <a href="mailto:mayuluck021@gmail.com">mayuluck021@gmail.com</a></div>
+    </div>
+  </header>
+
+  <div class="lead">
+    <p><strong>一句话版本：</strong>J Shell 是一个本地优先的 SSH 客户端。<strong>开发者不运营任何服务器，不收集、不上传、不存储你的任何数据，也不向第三方出售数据。</strong>你的主机配置、密钥和令牌只保存在你自己的手机里；只有在你主动使用 AI 助手或 GitLab 浏览时，相关请求才会由你的手机<strong>直接</strong>发往你自己配置的服务。</p>
+    <p lang="en"><strong>In one sentence:</strong> J Shell is a local-first SSH client. <strong>The developer runs no servers and does not collect, upload, store, or sell any of your data.</strong> Your host profiles, keys, and tokens stay on your own phone. Data leaves your device only when you actively use the AI assistant or GitLab browsing, and then it goes <strong>directly</strong> from your phone to services you configured yourself.</p>
+  </div>
+
+  <!-- ======================= 中文版 ======================= -->
+  <section id="zh" lang="zh-CN">
+    <h2>一、适用范围</h2>
+    <p>本政策说明 J Shell Android 应用（下称“本应用”）如何处理与你有关的信息。本应用由个人开发者独立开发并发布，本政策中的“我们”指该开发者。</p>
+
+    <h2>二、我们收集哪些信息</h2>
+    <h3>2.1 我们不收集任何信息</h3>
+    <p>本应用<strong>没有账号系统</strong>，<strong>没有开发者运营的服务器或后端接口</strong>，也不接入任何统计分析、崩溃上报、广告或用户画像 SDK。具体来说，我们<strong>不会</strong>收集或上传：</p>
+    <ul>
+      <li>你的姓名、邮箱、电话、账号等身份信息（本应用没有注册与登录）；</li>
+      <li>设备标识符（IMEI、Android ID、广告 ID、MAC 地址等）；</li>
+      <li>位置信息、通讯录、短信、通话记录、照片、日历；</li>
+      <li>剪贴板内容（只有你主动点击“粘贴”时，内容才进入终端输入）；</li>
+      <li>你在终端里输入的命令、终端输出、SFTP 浏览过的文件内容（这些只在你手机与你自己连接的服务器之间传输）；</li>
+      <li>应用使用行为、崩溃日志、性能数据（本应用不包含任何此类上报组件）。</li>
+    </ul>
+
+    <h3>2.2 仅保存在你手机上的信息</h3>
+    <p>以下信息写入本应用的私有存储目录（Android app-private storage），<strong>其他应用无法读取</strong>，也<strong>不会</strong>上传给我们或任何第三方：</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>信息</th><th>具体内容</th><th>用途</th><th>是否加密</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>主机配置</td>
+            <td>别名、地址（IP/域名）、端口、用户名、认证方式（密码/私钥）、上次连接时间、跳板机、会话保持（tmux）设置</td>
+            <td>让你一键连接常用服务器</td>
+            <td>明文（其中不含任何凭据）</td>
+          </tr>
+          <tr>
+            <td>已信任服务器指纹</td>
+            <td><code>用户名@地址:端口</code> 与服务器公钥的 SHA-256 指纹</td>
+            <td>首次连接时让你核对指纹；指纹变化时阻止连接，防止中间人攻击</td>
+            <td>明文（公钥指纹不属于敏感信息）</td>
+          </tr>
+          <tr>
+            <td>应用设置</td>
+            <td>主题、终端字号、指纹锁开关、会话保持默认开关、隐藏页面开关</td>
+            <td>记住你的界面偏好</td>
+            <td>明文</td>
+          </tr>
+          <tr>
+            <td>AI 助手设置</td>
+            <td>服务商（OpenAI / DeepSeek）、模型名称、API Key</td>
+            <td>调用你选择的 AI 服务</td>
+            <td><strong>API Key 使用 Android Keystore 的 AES-GCM 加密</strong>（密钥存放在系统密钥库中，不写入应用数据）</td>
+          </tr>
+          <tr>
+            <td>GitLab 设置</td>
+            <td>实例地址、登录用户名、服务端版本缓存、访问令牌与刷新令牌、你粘贴的内部 CA 证书、是否允许明文 http 的确认标记、令牌到期时间</td>
+            <td>免去每次重新登录</td>
+            <td><strong>访问令牌与刷新令牌加密</strong>（同上）；地址、用户名、CA 证书为明文</td>
+          </tr>
+          <tr>
+            <td>端口转发规则</td>
+            <td>转发类型（<code>-L</code>/<code>-R</code>）、本地端口、目标地址与端口、监听范围</td>
+            <td>连接后自动建立隧道并在重连后恢复</td>
+            <td>明文</td>
+          </tr>
+          <tr>
+            <td>你从远端保存的文件</td>
+            <td>通过系统文件选择器保存的 SFTP 文件</td>
+            <td>把远端文件保存到本机</td>
+            <td>保存在<strong>你选择的位置</strong>，本应用不会保留访问权限</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>2.3 只在内存中短暂存在、绝不写入存储的信息</h3>
+    <ul>
+      <li>SSH 登录密码、私钥口令、跳板机密码；</li>
+      <li>你选择或粘贴的 SSH 私钥内容（使用后立即在内存中清零）；</li>
+      <li>GitLab 账号登录密码（仅用于向<strong>你自己的</strong> GitLab 实例换取令牌，换取后立即丢弃）。</li>
+    </ul>
+    <p>这些内容不会落盘、不会上传、也不会在应用重启后保留。</p>
+
+    <h3>2.4 系统调试日志</h3>
+    <p>本应用在开发调试中会写入 Android 系统日志（logcat）。这些日志<strong>只留在你的设备上</strong>，由 Android 系统管理并按系统策略轮转清除，<strong>不会</strong>被写入文件、<strong>不会</strong>发送给我们。日志中可能出现服务器地址或命令片段，若你与他人共享设备日志，请注意其中可能包含此类信息。</p>
+
+    <h3>2.5 云备份与换机迁移</h3>
+    <p>本应用已在清单中<strong>关闭</strong> Android 自动备份（<code>allowBackup=false</code>），并在数据提取规则中排除了全部数据域。因此上述数据<strong>不会</strong>进入 Google 云备份，<strong>不会</strong>随换机迁移到其他设备——你的配置与令牌只存在于当前这台设备上。</p>
+
+    <h2>三、这些信息用来做什么</h2>
+    <p>我们使用上述<strong>保存在你设备上</strong>的信息，只用于实现应用功能本身：连接你指定的服务器、校验服务器身份、记住你的界面偏好、在你授权后调用 AI 服务、访问你的 GitLab 实例、建立你配置的端口转发隧道。我们<strong>不做</strong>用户画像、<strong>不做</strong>广告投放、<strong>不做</strong>与功能无关的任何用途。</p>
+
+    <h2>四、你的数据会发送到哪里（是否分享给第三方）</h2>
+    <p>我们<strong>不向任何第三方出售、出租或交换</strong>你的数据。数据只有在你主动使用相应功能时，才会由你的手机<strong>直接</strong>发往以下对象：</p>
+
+    <h3>4.1 你自己指定的 SSH 服务器（必需功能）</h3>
+    <p>你连接的主机地址、用户名与认证凭据，以及你输入的命令与终端输出，都会在你的手机与<strong>你自己填写的服务器</strong>之间通过 SSH 加密传输。这些数据由该服务器的管理者（通常就是你本人或你的公司）控制与留存，与我们无关。</p>
+
+    <h3>4.2 AI 助手（默认关闭，需要你自行填入 API Key）</h3>
+    <p>只有你在设置中填入 OpenAI 或 DeepSeek 的 API Key 并主动发起对话时，本应用才会把以下内容通过 HTTPS 发送给<strong>你选择的服务商</strong>：</p>
+    <ul>
+      <li>你在对话框里输入的文本；</li>
+      <li>模型给出的命令（在你点击“执行”后于远端服务器上运行）；</li>
+      <li>这些命令的<strong>执行结果</strong>（标准输出、标准错误、退出码，超出长度上限的部分会被截断）。</li>
+    </ul>
+    <p>发送的端点固定为 <code>https://api.openai.com/v1/responses</code>（OpenAI）或 <code>https://api.deepseek.com/responses</code>（DeepSeek），<strong>不经过</strong>我们的任何服务器。本应用<strong>不会</strong>把主机配置、密码、私钥、令牌、终端历史缓冲区发送给 AI 服务商。对话内容<strong>不会</strong>被本应用保存在设备上，仅在当前会话的内存中保留，退出会话即消失（这也是“停止”按钮会重置上下文的原因）。</p>
+    <p>这些内容一旦发送，即由该服务商按其隐私政策处理（可能包括存储与人工审阅），并可能被传输到你所处国家/地区以外的服务器。请在使用前阅读并确认你接受其政策：</p>
+    <ul>
+      <li>OpenAI：<a href="https://openai.com/policies/privacy-policy" rel="noopener noreferrer">https://openai.com/policies/privacy-policy</a></li>
+      <li>DeepSeek：<a href="https://cdn.deepseek.com/policies/zh-CN/deepseek-privacy-policy.html" rel="noopener noreferrer">https://cdn.deepseek.com/policies/zh-CN/deepseek-privacy-policy.html</a></li>
+    </ul>
+    <p>如果你不希望任何数据离开设备，<strong>请不要配置 AI 助手</strong>——除此之外的功能都不需要它。</p>
+
+    <h3>4.3 GitLab 浏览（需要你填写实例地址）</h3>
+    <p>请求由你的手机直接发往<strong>你自己填写的 GitLab 实例</strong>（公司自建实例或 gitlab.com），并携带你提供的访问令牌。若你选择“用 GitLab 账号登录”，你的用户名与密码只会发送给<strong>该实例</strong>的 <code>/oauth/token</code> 接口，用于换取访问令牌；密码不会保存在本应用。本应用对 GitLab 的请求<strong>全部为只读的 GET 请求</strong>（唯一的 POST 是上述登录换取令牌）。</p>
+    <p>出于兼容内网自建实例的需要，本应用允许 <code>http://</code> 地址，但<strong>必须由你在设置页显式勾选确认</strong>才会生效（明文传输意味着同一网络中的其他人可能看到这些请求，建议优先使用 https）。请求内容会进入该实例的服务器访问日志，由实例管理者控制。</p>
+
+    <h3>4.4 应用分发渠道</h3>
+    <p>本应用通过 Google Play 分发。Google 作为分发平台可能按其自身政策收集安装与设备相关信息（例如用于更新与安全）。这属于 Google 的行为，不在本应用的控制范围内，详见 Google 的隐私政策。</p>
+
+    <h2>五、应用申请的权限及用途</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>权限 / 能力</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td><code>INTERNET</code></td><td>连接你指定的 SSH/SFTP 服务器、AI 服务商与 GitLab 实例。这是本应用唯一必需的网络权限</td></tr>
+          <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>读取网络连通状态，用于断线后的自动重连与恢复端口转发</td></tr>
+          <tr><td><code>FOREGROUND_SERVICE</code>、<code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>在你切换到其他应用时保持 SSH 会话与隧道不被系统回收；同时显示一条常驻通知，通知中可返回终端或断开连接</td></tr>
+          <tr><td><code>POST_NOTIFICATIONS</code>（Android 13+）</td><td>显示上述会话通知。拒绝授权只影响通知可见性，不影响功能</td></tr>
+          <tr><td>生物识别（<code>androidx.biometric</code>）</td><td>可选的应用锁。指纹或设备 PIN/密码的比对<strong>完全由 Android 系统完成</strong>，本应用只能收到“验证成功/失败”，无法接触、读取或存储任何生物特征数据</td></tr>
+          <tr><td>系统文件选择器（SAF）</td><td>选择 SSH 私钥文件、导入 OpenVPN 配置、把远端文件保存到本机。本应用不需要也不申请存储权限，只能访问你明确选中的那个文件</td></tr>
+          <tr><td><code>BIND_VPN_SERVICE</code>（当前版本未启用）</td><td>见第八节</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>除上述权限外，本应用不申请任何其他权限。</p>
+
+    <h2>六、数据如何保存与保护</h2>
+    <ol>
+      <li><strong>不落盘原则</strong>：密码、私钥与私钥口令从不写入存储，使用后在内存中清零；</li>
+      <li><strong>系统级加密</strong>：API Key、GitLab 访问令牌与刷新令牌使用 Android Keystore 中的密钥做 AES-GCM 加密，密钥不离开系统密钥库；</li>
+      <li><strong>应用私有目录</strong>：配置文件只保存在本应用的私有存储中，其他应用无法访问；</li>
+      <li><strong>关闭备份</strong>：不参与云备份与换机迁移，减少数据外泄面；</li>
+      <li><strong>默认最小暴露</strong>：端口转发默认只监听 <code>127.0.0.1</code>（仅本机可访问），选择对同网络开放时界面会明确警告；</li>
+      <li><strong>传输加密</strong>：SSH、AI 服务商与 https 的 GitLab 通信均加密传输；明文 http 仅在你显式确认后可用；</li>
+      <li><strong>不引入第三方 SDK</strong>：应用内没有广告、统计或跟踪组件，不存在第三方从应用内采集数据的通道。</li>
+    </ol>
+    <p>同时请理解技术上的固有边界：<strong>本应用无法保护已经离开手机的数据</strong>——你在你自己服务器上的命令记录、你使用 AI 服务商时其留存的内容、你所在 GitLab 实例上的访问日志，都由对应服务的运营方控制。此外，已被 root 或植入恶意软件、或使用了不安全锁屏的设备，本应用的保护措施可能失效。<strong>连接凭据的安全性最终取决于你所连接服务器的安全性与你的设备安全。</strong></p>
+
+    <h2>七、数据保留多久、如何删除</h2>
+    <p><strong>保留期限</strong>：保存在你设备上的信息会一直保留，直到你<strong>主动删除</strong>或<strong>卸载应用</strong>。我们不做任何异地留存，因此没有“服务器端的你”。</p>
+    <p><strong>你自己即可完成的删除方式</strong>：</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>想删除什么</th><th>在哪里删</th></tr></thead>
+        <tbody>
+          <tr><td>某台主机的配置</td><td>首页该主机卡片右侧菜单（⋮）→ 删除</td></tr>
+          <tr><td>已信任的服务器指纹</td><td>首页顶栏“更多” → 信任服务器管理 → 逐个移除</td></tr>
+          <tr><td>AI 的 API Key、模型设置</td><td>设置 → AI 助手 → 清空密钥并保存</td></tr>
+          <tr><td>GitLab 访问令牌与刷新令牌</td><td>GitLab 连接设置 → 清空「访问令牌」并保存（令牌即从设备删除，应用退回匿名浏览公共项目）</td></tr>
+          <tr><td>某台主机的端口转发规则</td><td>会话工具 → 端口转发 → 点规则上的删除图标</td></tr>
+          <tr><td>全部数据</td><td>卸载应用，或在系统“应用信息”中执行“清除数据”</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>卸载即彻底删除</strong>：由于本应用不参与云备份，卸载后上述数据不会在任何地方留下副本，也<strong>无法恢复</strong>。应用内没有单独的“清除全部设置”按钮；上表之外的非敏感本地数据（例如 GitLab 实例地址、内部 CA 证书、界面偏好）可在系统“应用信息 → 清除数据”或卸载应用时一并删除。</p>
+    <p><strong>第三方侧的数据</strong>：若你要删除 AI 服务商或 GitLab 实例上留存的内容，需要按对应服务商的政策在其账号设置中操作；你也可以随时在服务商处<strong>吊销</strong>（revoke）API Key 或访问令牌，使本应用再也无法访问该服务。</p>
+
+    <h2>八、关于 VPN（当前版本）</h2>
+    <p><strong>本版本不提供 VPN 功能</strong>，应用内没有 VPN 连接入口，也不会创建、转发或收集任何网络流量。为便于将来恢复该功能，安装包内保留了相关代码与系统声明（<code>BIND_VPN_SERVICE</code>），但在当前版本中它不会被启动、不会申请系统 VPN 授权，也不会处理你的任何流量。若未来的版本重新开放该入口，我们会在本政策中明确说明（届时隧道仍只在你自己的设备与你配置的目标网络之间建立，不经过我们的服务器），并在更新说明中告知。</p>
+
+    <h2>九、儿童</h2>
+    <p>本应用是面向开发者与运维人员的服务器管理工具，<strong>不面向儿童</strong>，也不会有意收集儿童（不满 14 周岁）的任何个人信息。由于本应用不收集任何个人信息，若你认为有儿童在未经监护人同意的情况下向我们提供了信息，请联系我们，我们会协助处理（实际上我们没有任何此类数据可删除）。</p>
+
+    <h2>十、本政策的变更</h2>
+    <p>我们可能随功能变化更新本政策。更新后的版本会发布在同一网址上，并更新顶部的“最近更新”日期。若变更涉及你数据的处理方式（例如未来开放 VPN 入口或引入新的第三方服务），我们会在应用内或商店更新说明中显著提示。继续使用更新后的应用，即表示你接受更新后的政策。</p>
+
+    <h2>十一、联系我们</h2>
+    <p>对本政策或你的数据有任何疑问、意见或删除请求，请联系：<strong>邮箱 <a href="mailto:mayuluck021@gmail.com">mayuluck021@gmail.com</a></strong>（我们通常会在 7 个工作日内回复）。</p>
+  </section>
+
+  <!-- ======================= English ======================= -->
+  <section id="en" lang="en">
+    <h2>1. Scope</h2>
+    <p>This policy explains how the J Shell Android app (“the app”) handles information about you. The app is built and published by an individual developer; “we” below means that developer.</p>
+
+    <h2>2. What we collect</h2>
+    <h3>2.1 We collect nothing</h3>
+    <p>The app has <strong>no accounts</strong>, <strong>no developer-run server or backend</strong>, and no analytics, crash-reporting, advertising, or profiling SDK. In particular, we do <strong>not</strong> collect or upload:</p>
+    <ul>
+      <li>your name, email, phone number, or any account identity (there is no sign-up);</li>
+      <li>device identifiers (IMEI, Android ID, advertising ID, MAC address);</li>
+      <li>location, contacts, SMS, call logs, photos, or calendar;</li>
+      <li>clipboard contents (text enters the terminal only when you tap Paste yourself);</li>
+      <li>the commands you type, terminal output, or the contents of files you browse over SFTP — these travel only between your phone and the servers you connect to;</li>
+      <li>usage analytics, crash logs, or performance data (the app contains no such component).</li>
+    </ul>
+
+    <h3>2.2 Information stored only on your phone</h3>
+    <p>The following is written to the app’s <strong>private storage</strong> on your device. Other apps cannot read it, and it is never uploaded to us or to any third party:</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Information</th><th>Contents</th><th>Purpose</th><th>Encrypted?</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Host profiles</td>
+            <td>Alias, address (IP/domain), port, username, authentication type (password/key), last-connected time, jump host, tmux settings</td>
+            <td>One-tap connections to your servers</td>
+            <td>Plain text (contains no credentials)</td>
+          </tr>
+          <tr>
+            <td>Trusted server fingerprints</td>
+            <td><code>user@host:port</code> plus the SHA-256 fingerprint of the server’s public key</td>
+            <td>Lets you verify a server on first connect and blocks a connection when the key changes (man-in-the-middle protection)</td>
+            <td>Plain text (a public-key fingerprint is not sensitive)</td>
+          </tr>
+          <tr>
+            <td>App settings</td>
+            <td>Theme, terminal font size, biometric-lock toggle, session keep-alive default, hidden-page toggle</td>
+            <td>Remembers your preferences</td>
+            <td>Plain text</td>
+          </tr>
+          <tr>
+            <td>AI assistant settings</td>
+            <td>Provider (OpenAI / DeepSeek), model name, API key</td>
+            <td>Calls the AI service you chose</td>
+            <td><strong>API key encrypted with AES-GCM using a key held in the Android Keystore</strong></td>
+          </tr>
+          <tr>
+            <td>GitLab settings</td>
+            <td>Instance URL, sign-in username, cached server version, access and refresh tokens, an internal CA certificate you pasted, your explicit acknowledgement of cleartext http, token expiry</td>
+            <td>Avoids re-authenticating every time</td>
+            <td><strong>Access and refresh tokens encrypted</strong> as above; URL, username, and CA certificate in plain text</td>
+          </tr>
+          <tr>
+            <td>Port-forwarding rules</td>
+            <td>Type (<code>-L</code>/<code>-R</code>), local port, target address and port, bind scope</td>
+            <td>Establishes tunnels on connect and restores them after a reconnect</td>
+            <td>Plain text</td>
+          </tr>
+          <tr>
+            <td>Files you save from a remote host</td>
+            <td>SFTP files saved via the system file picker</td>
+            <td>Store a remote file locally</td>
+            <td>Written to <strong>the location you pick</strong>; the app keeps no access to it</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>2.3 Kept in memory only, never written to storage</h3>
+    <ul>
+      <li>SSH passwords, private-key passphrases, and jump-host passwords;</li>
+      <li>Any SSH private key you select or paste (zeroed in memory right after use);</li>
+      <li>Your GitLab account password (used only to exchange for a token at <strong>your own</strong> GitLab instance, then discarded).</li>
+    </ul>
+    <p>None of this is persisted, uploaded, or retained after the app restarts.</p>
+
+    <h3>2.4 System debug logs</h3>
+    <p>For development the app writes to the Android system log (logcat). Those logs <strong>stay on your device</strong>, are managed and rotated by Android, are <strong>never</strong> written to a file, and are <strong>never</strong> sent to us. They may contain server addresses or command fragments, so treat a shared device log accordingly.</p>
+
+    <h3>2.5 Cloud backup and device transfer</h3>
+    <p>The app <strong>disables</strong> Android auto-backup (<code>allowBackup=false</code>) and excludes every data domain in its data-extraction rules. Nothing listed above enters Google cloud backup or moves to another device during a transfer — your configuration and tokens exist only on this device.</p>
+
+    <h2>3. What the information is used for</h2>
+    <p>The information stored <strong>on your device</strong> is used solely to provide the app’s features: connecting to servers you specify, verifying server identity, remembering your preferences, calling an AI service you enabled, reaching your GitLab instance, and running the tunnels you configured. We do <strong>not</strong> profile you, serve ads, or use your data for anything unrelated to these features.</p>
+
+    <h2>4. Where your data goes (third-party sharing)</h2>
+    <p>We <strong>never sell, rent, or trade</strong> your data. Data leaves your phone only when you actively use a feature, and then it goes <strong>directly</strong> to:</p>
+
+    <h3>4.1 Your own SSH servers (core feature)</h3>
+    <p>The host address, username, and credentials you enter, along with the commands you type and the terminal output, travel between your phone and <strong>the server you configured</strong>, encrypted by SSH. That data is controlled and retained by the operator of that server (usually you or your employer), not by us.</p>
+
+    <h3>4.2 AI assistant (off by default; requires your own API key)</h3>
+    <p>Only after you enter an OpenAI or DeepSeek API key in Settings and start a conversation does the app send the following over HTTPS to <strong>the provider you selected</strong>:</p>
+    <ul>
+      <li>the text you type in the chat box;</li>
+      <li>the commands the model proposes (run on the remote server after you tap Execute);</li>
+      <li>the <strong>results</strong> of those commands (stdout, stderr, exit code; longer output is truncated).</li>
+    </ul>
+    <p>Requests go to <code>https://api.openai.com/v1/responses</code> (OpenAI) or <code>https://api.deepseek.com/responses</code> (DeepSeek), <strong>never through a server of ours</strong>. The app does <strong>not</strong> send host profiles, passwords, private keys, tokens, or the terminal scrollback buffer to the AI provider. Chat content is <strong>not</strong> stored on your device by the app: it lives in memory for the current session only and disappears when the session ends (which is also why the Stop button resets the context).</p>
+    <p>Once sent, that content is handled under the provider’s own privacy policy (which may include storage and human review) and may be transferred to servers outside your country or region. Please read their policies before enabling this feature:</p>
+    <ul>
+      <li>OpenAI: <a href="https://openai.com/policies/privacy-policy" rel="noopener noreferrer">https://openai.com/policies/privacy-policy</a></li>
+      <li>DeepSeek: <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" rel="noopener noreferrer">https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html</a></li>
+    </ul>
+    <p>If you do not want any data to leave your device, <strong>simply do not configure the AI assistant</strong> — every other feature works without it.</p>
+
+    <h3>4.3 GitLab browsing (requires your instance URL)</h3>
+    <p>Requests go from your phone directly to <strong>the GitLab instance you enter</strong> (a self-hosted instance or gitlab.com) and carry the access token you supplied. If you choose “sign in with a GitLab account”, your username and password are sent only to <strong>that instance’s</strong> <code>/oauth/token</code> endpoint to obtain a token; the password is not stored by the app. All repository requests are read-only <strong>GET</strong> requests (the only POST is that sign-in exchange).</p>
+    <p>For self-hosted intranet instances the app permits <code>http://</code> addresses, but only after <strong>you explicitly tick the acknowledgement</strong> in Settings (cleartext means others on the same network may see those requests; prefer https). Requests appear in that instance’s server access logs, which its administrator controls.</p>
+
+    <h3>4.4 Distribution channel</h3>
+    <p>The app is distributed via Google Play. As the distributor, Google may collect install- and device-related information under its own policies (for example, for updates and security). That is Google’s processing, outside this app’s control; see Google’s privacy policy.</p>
+
+    <h2>5. Permissions and why they are needed</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Permission / capability</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><code>INTERNET</code></td><td>Connect to the SSH/SFTP servers, AI providers, and GitLab instances you specify. The app’s only mandatory network permission</td></tr>
+          <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Read connectivity so sessions and tunnels can recover after a network switch</td></tr>
+          <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>Keep an SSH session or tunnel alive while you use other apps, with a persistent notification that can return to the terminal or disconnect</td></tr>
+          <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>Shows that session notification. Denying it only hides the notification; nothing else breaks</td></tr>
+          <tr><td>Biometrics (<code>androidx.biometric</code>)</td><td>Optional app lock. Fingerprint or device PIN/password verification is performed <strong>entirely by Android</strong>; the app only learns success or failure and can never access, read, or store biometric data</td></tr>
+          <tr><td>System file picker (SAF)</td><td>Pick an SSH private key, import an OpenVPN profile, or save a remote file locally. The app requests no storage permission and can only access the exact file you select</td></tr>
+          <tr><td><code>BIND_VPN_SERVICE</code> (not active in this version)</td><td>See section 8</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>No other permissions are requested.</p>
+
+    <h2>6. How data is stored and protected</h2>
+    <ol>
+      <li><strong>Nothing sensitive is persisted</strong>: passwords, private keys, and passphrases are never written to storage and are zeroed in memory after use.</li>
+      <li><strong>System-backed encryption</strong>: API keys and GitLab access/refresh tokens are encrypted with AES-GCM using a key held in the Android Keystore, which never leaves the system key store.</li>
+      <li><strong>Private storage</strong>: configuration lives in the app’s private directory, unreadable by other apps.</li>
+      <li><strong>Backup disabled</strong>: no cloud backup or device transfer, which shrinks the exposure surface.</li>
+      <li><strong>Minimal exposure by default</strong>: tunnels listen on <code>127.0.0.1</code> only unless you deliberately expose one to your local network, and the UI warns you when you do.</li>
+      <li><strong>Encrypted transport</strong>: SSH, AI providers, and https GitLab traffic are all encrypted; cleartext http requires your explicit acknowledgement.</li>
+      <li><strong>No third-party SDKs</strong>: there are no ads, analytics, or tracking components, so no third party can collect data from inside the app.</li>
+    </ol>
+    <p>Please also note the inherent limits: <strong>the app cannot protect data that has already left your phone</strong> — command history on your own servers, content retained by an AI provider, and access logs on your GitLab instance are all controlled by those service operators. On a rooted or malware-infected device, or one with an insecure lock screen, these protections may fail. <strong>The security of your credentials ultimately depends on the security of the servers you connect to and of your device.</strong></p>
+
+    <h2>7. Retention and deletion</h2>
+    <p><strong>Retention</strong>: information on your device is kept until <strong>you delete it</strong> or <strong>uninstall the app</strong>. We keep no copy anywhere else, so there is no server-side “you”.</p>
+    <p><strong>How to delete it yourself</strong>:</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>To delete</th><th>Where</th></tr></thead>
+        <tbody>
+          <tr><td>A host profile</td><td>Home screen → the host card’s menu (⋮) → Delete</td></tr>
+          <tr><td>Trusted server fingerprints</td><td>Home top bar → More → Trusted servers → remove each entry</td></tr>
+          <tr><td>AI API keys and model settings</td><td>Settings → AI assistant → clear the key and save</td></tr>
+          <tr><td>GitLab access and refresh tokens</td><td>GitLab connection settings → clear the access token field and save (the tokens are then deleted from the device and the app falls back to anonymous browsing of public projects)</td></tr>
+          <tr><td>A host’s port-forwarding rules</td><td>Session tools → Port forwarding → the delete icon on the rule</td></tr>
+          <tr><td>Everything</td><td>Uninstall the app, or use “Clear data” in Android’s App info</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Uninstalling deletes everything</strong>: because the app is excluded from cloud backup, no copy of this data survives anywhere, and it <strong>cannot be recovered</strong>. There is no single “clear all settings” button; the remaining non-sensitive local data (for example the GitLab instance URL, an internal CA certificate, and UI preferences) goes away with Android’s “Clear data” or by uninstalling the app.</p>
+    <p><strong>Data held by third parties</strong>: to delete content retained by an AI provider or a GitLab instance, use that provider’s own account controls. You can also <strong>revoke</strong> your API key or access token at any time, after which the app can no longer reach that service.</p>
+
+    <h2>8. About VPN (current version)</h2>
+    <p><strong>This version provides no VPN functionality</strong>: there is no VPN entry point in the app, and it does not create, route, or collect any network traffic. To make a future re-enablement easier, the related code and system declaration (<code>BIND_VPN_SERVICE</code>) remain in the package, but in this version they are never started, never request system VPN consent, and never handle your traffic. Should a future version re-open that entry point, we will say so explicitly in this policy (the tunnel would still run only between your device and the target network you configure, never through our servers) and in the release notes.</p>
+
+    <h2>9. Children</h2>
+    <p>The app is a server-management tool for developers and operators. It is <strong>not directed to children</strong> and does not knowingly collect any personal information from children (under 14). Because the app collects no personal information at all, there is nothing for us to delete; if you believe a child has provided us information, contact us and we will help.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>We may update this policy as the app changes. The updated version will be published at the same URL with a new “Last updated” date. If a change affects how your data is handled (for example, re-enabling the VPN entry point or adding a new third-party service), we will highlight it in the app or in the store release notes. Continuing to use the updated app means you accept the updated policy.</p>
+
+    <h2>11. Contact us</h2>
+    <p>For any question, concern, or deletion request regarding this policy or your data: <strong>email <a href="mailto:mayuluck021@gmail.com">mayuluck021@gmail.com</a></strong> (we normally reply within 7 business days).</p>
+  </section>
+
+  <footer>
+    <p>J Shell · <code>com.jay.harborshell</code> · 2026-09-30</p>
+  </footer>
+</main>
+
+<script>
+  // 语言切换：默认中英并排显示（禁用 JS 时两种语言同样都可见，不会白屏）。
+  // 点某个语言 = 只看该语言；再点一次 = 回到并排显示。
+  (function () {
+    var sections = { zh: document.getElementById('zh'), en: document.getElementById('en') };
+    var buttons = { zh: document.getElementById('btn-zh'), en: document.getElementById('btn-en') };
+    var mode = 'both'; // 'both' | 'zh' | 'en'
+
+    function render() {
+      buttons.zh.setAttribute('aria-pressed', String(mode !== 'en'));
+      buttons.en.setAttribute('aria-pressed', String(mode !== 'zh'));
+      sections.zh.hidden = mode === 'en';
+      sections.en.hidden = mode === 'zh';
+    }
+
+    Object.keys(buttons).forEach(function (key) {
+      buttons[key].addEventListener('click', function () {
+        mode = mode === key ? 'both' : key;
+        render();
+      });
+    });
+    render();
+  })();
+</script>
+</body>
+</html>
