@@ -94,7 +94,7 @@
     <h1>J Shell 隐私政策<br><span lang="en">J Shell Privacy Policy</span></h1>
     <div class="meta">
       <div><strong>生效日期 / Effective:</strong> 2026-09-30</div>
-      <div><strong>最近更新 / Updated:</strong> 2026-09-30</div>
+      <div><strong>最近更新 / Updated:</strong> 2026-10-01</div>
       <div><strong>适用应用 / App:</strong> J Shell（Android，<code>com.jay.harborshell</code>）</div>
       <div><strong>开发者 / Developer:</strong> J Shell 开发者（个人开发者） / The J Shell developer (individual)</div>
       <div><strong>联系邮箱 / Contact:</strong> <a href="mailto:mayuluck021@gmail.com">mayuluck021@gmail.com</a></div>
@@ -219,6 +219,16 @@
     <p>请求由你的手机直接发往<strong>你自己填写的 GitLab 实例</strong>（公司自建实例或 gitlab.com），并携带你提供的访问令牌。若你选择“用 GitLab 账号登录”，你的用户名与密码只会发送给<strong>该实例</strong>的 <code>/oauth/token</code> 接口，用于换取访问令牌；密码不会保存在本应用。本应用对 GitLab 的请求<strong>全部为只读的 GET 请求</strong>（唯一的 POST 是上述登录换取令牌）。</p>
     <p>出于兼容内网自建实例的需要，本应用允许 <code>http://</code> 地址，但<strong>必须由你在设置页显式勾选确认</strong>才会生效（明文传输意味着同一网络中的其他人可能看到这些请求，建议优先使用 https）。请求内容会进入该实例的服务器访问日志，由实例管理者控制。</p>
 
+    <h3>4.5 应用内购买（Pro 一次性解锁）</h3>
+    <p>本应用的 <strong>Pro 一次性解锁</strong>属于应用内购买，<strong>由 Google Play 完成全部交易与支付流程</strong>：</p>
+    <ul>
+      <li>我们<strong>不接触、不存储</strong>你的任何支付信息（卡号、账单地址等都不经过本应用）；退款、税率、发票与账单问题由 Google Play 按其政策处理；</li>
+      <li>购买状态只以“是否已解锁”这一个布尔标记保存在<strong>你的手机本地</strong>（与主机配置同一个应用私有目录），<strong>不上传、不与任何账号绑定</strong>，我们也没有你的购买记录；</li>
+      <li>换机或重装后，用同一个 Google 账号可在应用内点「恢复购买」重新解锁（该查询由 Google Play 完成）；</li>
+      <li>免费版与 Pro 版的<strong>数据处理方式完全相同</strong>：无论是否购买，本应用都不收集、不上传你的任何数据（见第二节）。</li>
+    </ul>
+    <p>除 Google Play 的内购结算外，本应用没有任何订阅、没有自动续费、也不接入任何第三方支付或广告 SDK。</p>
+
     <h3>4.4 应用分发渠道</h3>
     <p>本应用通过 Google Play 分发。Google 作为分发平台可能按其自身政策收集安装与设备相关信息（例如用于更新与安全）。这属于 Google 的行为，不在本应用的控制范围内，详见 Google 的隐私政策。</p>
 
@@ -233,6 +243,7 @@
           <tr><td><code>POST_NOTIFICATIONS</code>（Android 13+）</td><td>显示上述会话通知。拒绝授权只影响通知可见性，不影响功能</td></tr>
           <tr><td>生物识别（<code>androidx.biometric</code>）</td><td>可选的应用锁。指纹或设备 PIN/密码的比对<strong>完全由 Android 系统完成</strong>，本应用只能收到“验证成功/失败”，无法接触、读取或存储任何生物特征数据</td></tr>
           <tr><td>系统文件选择器（SAF）</td><td>选择 SSH 私钥文件、导入 OpenVPN 配置、把远端文件保存到本机。本应用不需要也不申请存储权限，只能访问你明确选中的那个文件</td></tr>
+          <tr><td><code>com.android.vending.BILLING</code></td><td>应用内购买 Pro 一次性解锁（由 Google Play 结算，见 4.5）。该权限只用于查询与发起购买，本应用不读取任何支付信息</td></tr>
           <tr><td><code>BIND_VPN_SERVICE</code>（当前版本未启用）</td><td>见第八节</td></tr>
         </tbody>
       </table>
@@ -394,6 +405,16 @@
     <p>Requests go from your phone directly to <strong>the GitLab instance you enter</strong> (a self-hosted instance or gitlab.com) and carry the access token you supplied. If you choose “sign in with a GitLab account”, your username and password are sent only to <strong>that instance’s</strong> <code>/oauth/token</code> endpoint to obtain a token; the password is not stored by the app. All repository requests are read-only <strong>GET</strong> requests (the only POST is that sign-in exchange).</p>
     <p>For self-hosted intranet instances the app permits <code>http://</code> addresses, but only after <strong>you explicitly tick the acknowledgement</strong> in Settings (cleartext means others on the same network may see those requests; prefer https). Requests appear in that instance’s server access logs, which its administrator controls.</p>
 
+    <h3>4.5 In-app purchase (the one-time Pro unlock)</h3>
+    <p>The <strong>one-time Pro unlock</strong> is an in-app purchase, and <strong>Google Play handles the entire transaction and payment flow</strong>:</p>
+    <ul>
+      <li>We never see or store any payment information (card numbers and billing addresses never reach this app). Refunds, taxes, invoices and billing questions are handled by Google Play under its own policies;</li>
+      <li>The purchase state is a single boolean flag (“unlocked or not”) stored <strong>locally on your phone</strong>, next to your host configuration. It is not uploaded and not tied to any account of ours — we hold no record of your purchase;</li>
+      <li>After switching devices or reinstalling, tap “Restore purchase” in the app to unlock again with the same Google account (the lookup is performed by Google Play);</li>
+      <li>The free and Pro versions handle data <strong>identically</strong>: purchased or not, the app collects and uploads nothing (see section 2).</li>
+    </ul>
+    <p>Apart from Google Play billing, there are no subscriptions, no auto-renewals, and no third-party payment or advertising SDKs in this app.</p>
+
     <h3>4.4 Distribution channel</h3>
     <p>The app is distributed via Google Play. As the distributor, Google may collect install- and device-related information under its own policies (for example, for updates and security). That is Google’s processing, outside this app’s control; see Google’s privacy policy.</p>
 
@@ -408,6 +429,7 @@
           <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>Shows that session notification. Denying it only hides the notification; nothing else breaks</td></tr>
           <tr><td>Biometrics (<code>androidx.biometric</code>)</td><td>Optional app lock. Fingerprint or device PIN/password verification is performed <strong>entirely by Android</strong>; the app only learns success or failure and can never access, read, or store biometric data</td></tr>
           <tr><td>System file picker (SAF)</td><td>Pick an SSH private key, import an OpenVPN profile, or save a remote file locally. The app requests no storage permission and can only access the exact file you select</td></tr>
+          <tr><td><code>com.android.vending.BILLING</code></td><td>In-app purchase of the one-time Pro unlock, billed by Google Play (see 4.5). Used only to query and start a purchase; the app never reads payment details</td></tr>
           <tr><td><code>BIND_VPN_SERVICE</code> (not active in this version)</td><td>See section 8</td></tr>
         </tbody>
       </table>
